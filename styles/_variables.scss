@@ -1,0 +1,90 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 80em; //1800px Big desktop
+$bp-large: 67.5em; //1200px Tablet landscape
+$bp-medium: 56.25em; //900px Tablet portrait
+$bp-small: 37.5em; //600px phone
+$bp-smallest: 31.25em; //500px
+
+// FONT-SIZES
+$font-size-huge: 3.65rem;
+$font-size-grand: 3.2rem;
+$font-size-biggest: 2.4rem;
+$font-normal: 2.2rem;
+$font-size-big: 1.8rem;
+$font-size-medium: 1.6rem;
+$font-size-small: 1.4rem;
+$font-size-smallest: 1.2rem;
+$font-size-tiny: 1rem;
+
+// COLORS
+$primary: rgb(217, 178, 109);
+$secondary: rgb(160, 109, 64);
+$brown-tertiary: rgb(156, 86, 61);
+$background: rgb(255, 255, 255);
+$dark-background: rgb(0, 0, 0);
+$titles: rgb(101, 70, 52);
+$text: rgb(61, 50, 44);
+//$text-bg: #;
+$added-1: rgb(162, 165, 106);
+$added-2: rgb(82, 116, 122);
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+  @if $breakpoint == tiny {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == tiny-desktop {
+    @media only screen and (min-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    } //1400px
+  }
+  @if $breakpoint == medium-desktop {
+    @media only screen and (min-width: 87.5em) {
+      @content;
+    } //1400px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}
