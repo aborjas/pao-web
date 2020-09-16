@@ -1,8 +1,8 @@
 .container {
   grid-area: header;
   width: 100%;
-  background-color: #fff;
-  height: 5rem;
+  background-color: #000;
+  height: 10rem;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -13,4 +13,11 @@
 }
 
 .content {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: min-content 1fr auto;
+  grid-template-areas: "nav logo social";
+  grid-column-gap: 4rem;
+  width: 100%;
+  padding: 0 4rem;
 }

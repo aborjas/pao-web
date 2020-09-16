@@ -1,8 +1,9 @@
 import * as React from "react";
+import { Header } from "../components/header";
 
 const PaoWeb = () => (
   <section>
-    <p>Hola Mundo</p>
+    <Header />
   </section>
 );
 export default PaoWeb;
