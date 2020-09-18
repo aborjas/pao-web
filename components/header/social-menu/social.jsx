@@ -24,14 +24,16 @@ const socialMediaList = [
 
 export const SocialMenu = () => {
   return (
-    <ul className={styles.list}>
-      {socialMediaList.map((value) => (
-        <li className={styles.item}>
-          <a href={value.link} target="_blank">
-            <SVG className={styles.icon} src={value.icon} />
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div className={styles.container}>
+      <ul className={styles.list}>
+        {socialMediaList.map((value) => (
+          <li className={styles.item}>
+            <a href={value.link} target="_blank">
+              <SVG className={styles.icon} src={value.icon} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
