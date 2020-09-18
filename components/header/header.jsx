@@ -3,6 +3,7 @@ import * as React from "react";
 import styles from "./header.module.scss";
 import { Nav } from "../header/nav";
 import { Logo } from "./logo";
+import { SocialMenu } from "./social-menu/social";
 
 export const Header = () => {
   return (
@@ -10,6 +11,7 @@ export const Header = () => {
       <div className={styles.content}>
         <Nav />
         <Logo />
+        <SocialMenu />
       </div>
     </header>
   );

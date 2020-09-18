@@ -9,6 +9,7 @@
     "pretty-quick": "^3.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-inlinesvg": "^2.1.0",
     "sass": "^1.26.10"
   },
   "devDependencies": {},
