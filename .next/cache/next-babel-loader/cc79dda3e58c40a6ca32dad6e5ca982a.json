@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { Header } from \"./header\";","map":{"version":3,"sources":["C:/Users/ABorj/desktop/pao-app/web/pao-web/components/header/index.js"],"names":["Header"],"mappings":"AAAA,SAASA,MAAT,QAAuB,UAAvB","sourcesContent":["export { Header } from \"./header\";\r\n"]},"metadata":{},"sourceType":"module"}
