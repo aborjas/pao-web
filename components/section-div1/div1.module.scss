@@ -1,0 +1,31 @@
+.container {
+  background-color: #000;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 37.2rem;
+  height: auto;
+  position: relative;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+}
+
+.text {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.other {
+  margin-top: 2.8rem;
+}

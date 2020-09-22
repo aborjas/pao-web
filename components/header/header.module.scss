@@ -15,7 +15,7 @@
 .content {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: min-content 1fr auto;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-areas: "nav logo social";
   grid-column-gap: 4rem;
   width: 100%;

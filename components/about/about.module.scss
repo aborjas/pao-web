@@ -1,0 +1,37 @@
+.container {
+}
+
+.info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10rem;
+
+  .imgBox {
+    width: 63rem;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .img {
+    width: 63rem;
+    height: auto;
+  }
+
+  .textContainer {
+    padding: 7rem 7rem 4rem;
+    width: 100rem;
+    height: auto;
+    background-color: #efe9cc;
+    position: absolute;
+    left: 25rem;
+    z-index: 2;
+  }
+
+  .aboutText {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d322c;
+    padding-bottom: 3rem;
+  }
+}
