@@ -1,0 +1,18 @@
+.container {
+  width: fit-content;
+  height: auto;
+  margin: 0 5rem 10rem 0;
+  align-self: flex-end;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    border-bottom: 2px solid rgba(82, 116, 122, 0.842);
+  }
+}
+
+.btn {
+  color: rgb(82, 116, 122);
+  font-size: 2.5rem;
+  text-decoration: none;
+}
