@@ -7,7 +7,7 @@ import styles from "./gal.module.scss";
 
 export const Gal = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="gal">
       <Title title="Galería" />
       <Card />
       <GalBtn />

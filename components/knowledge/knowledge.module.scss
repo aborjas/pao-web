@@ -1,0 +1,32 @@
+.container {
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.cap {
+  padding: 2rem;
+  margin: 2rem;
+  border: 0.8rem solid rgb(162, 165, 106);
+  width: 50rem;
+}
+
+.name {
+  font-size: 2.5rem;
+}
+
+.place,
+.name,
+.date {
+  font-weight: 100;
+  color: #3d322c;
+}
+
+.date {
+  font-size: 1.5rem;
+}
