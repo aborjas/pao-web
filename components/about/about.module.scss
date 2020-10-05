@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .container {
 }
 
@@ -6,32 +8,69 @@
   justify-content: flex-end;
   align-items: center;
   padding: 0 10rem 10rem;
+  flex-direction: row-reverse;
 
+  @include respond(desktop) {
+    justify-content: center;
+  }
+
+  @include respond(medium-desktop) {
+    padding: 0 25rem 10rem;
+  }
+
+  @include respond(big-desktop) {
+    padding: 0 35rem 10rem;
+  }
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+  }
+
+  .img,
   .imgBox {
-    width: 63rem;
+    width: 60rem;
     height: auto;
+
+    @include respond(desktop) {
+      width: auto;
+      height: 68rem;
+    }
+
+    @include respond(medium-desktop) {
+      width: auto;
+      height: 60rem;
+    }
+
+    @include respond(phone) {
+      width: 105rem;
+      height: auto;
+      align-self: flex-end;
+    }
+  }
+  .imgBox {
     position: relative;
     z-index: 1;
   }
 
-  .img {
-    width: 63rem;
-    height: auto;
-  }
-
   .textContainer {
     padding: 7rem 7rem 4rem;
-    width: 100rem;
-    height: auto;
     background-color: #efe9cc;
-    position: absolute;
-    left: 25rem;
-    z-index: 2;
+    height: auto;
+
+    @include respond(phone) {
+      width: 105rem;
+      height: auto;
+      align-self: flex-start;
+    }
   }
 
   .aboutText {
     font-family: Arial, Helvetica, sans-serif;
     color: #3d322c;
     padding-bottom: 3rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 }

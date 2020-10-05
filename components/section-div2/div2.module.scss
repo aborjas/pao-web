@@ -1,9 +1,15 @@
+@import "variables.scss";
+
 .container {
   background-color: #000;
   height: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(phone) {
+    height: 50rem;
+  }
 }
 
 .img {

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .titleContainer {
   padding: 5rem;
 }
@@ -6,4 +8,8 @@
   font-family: "Ramstay";
   font-size: 6rem;
   color: #654634;
+
+  @include respond(phone) {
+    font-size: 10rem;
+  }
 }

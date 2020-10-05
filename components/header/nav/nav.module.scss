@@ -1,12 +1,17 @@
+@import "variables.scss";
+
 .burguerMenu {
   grid-area: nav;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: auto;
 }
 
 .icon {
   height: 3rem;
   width: auto;
+
+  @include respond(phone) {
+    height: 4rem;
+  }
 }

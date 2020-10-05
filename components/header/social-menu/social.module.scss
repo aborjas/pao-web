@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .container {
   display: flex;
   justify-content: flex-end;
@@ -28,4 +30,7 @@
 .icon {
   height: 2.5rem;
   width: auto;
+  @include respond(phone) {
+    height: 4rem;
+  }
 }

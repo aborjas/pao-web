@@ -1,15 +1,22 @@
+@import "variables.scss";
+
 .container {
   background-color: #000;
   height: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  @include respond(phone) {
+    height: 50rem;
+  }
 }
 
 .img {
   width: 37.2rem;
   height: auto;
-  position: relative;
+  position: absolute;
 }
 
 .textContainer {
@@ -17,13 +24,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  position: absolute;
 }
 
 .text {
   font-family: Helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #fff;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .other {

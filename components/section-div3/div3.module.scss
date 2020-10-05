@@ -1,6 +1,11 @@
+@import "variables.scss";
+
 .container {
   background-color: #000;
   height: 45rem;
+  @include respond(phone) {
+    height: 50rem;
+  }
 }
 
 .img {

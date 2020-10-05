@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .logo {
   grid-area: logo;
   display: flex;
@@ -9,4 +11,7 @@
 .icon {
   height: 10rem;
   width: auto;
+  @include respond(phone) {
+    height: 15rem;
+  }
 }

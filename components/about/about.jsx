@@ -20,7 +20,7 @@ export const About = () => {
           </p>
           <p className={styles.aboutText}>
             Vivo en Maracaibo, tengo 25 años y soy la esposa de mi enamorado de
-            la universidad. Me encantan los perritos, los bebés ,y el olor del
+            la universidad. Me encantan los perritos, los bebés, y el olor del
             café y de la lluvia.
           </p>
           <p className={styles.aboutText}>

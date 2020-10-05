@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .container {
   grid-area: header;
   width: 100%;
@@ -10,6 +12,10 @@
   left: 0;
   box-shadow: 0 0.1rem 0.7rem 0 rgba(0, 0, 0, 0.1);
   z-index: 10000;
+
+  @include respond(phone) {
+    height: 15rem;
+  }
 }
 
 .content {
