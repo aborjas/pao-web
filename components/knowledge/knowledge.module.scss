@@ -19,7 +19,7 @@
 .cap {
   padding: 2rem;
   margin: 2rem;
-  border: 0.8rem solid rgb(162, 165, 106);
+  border: 0.8rem solid $secondary;
   width: 50rem;
 
   @include respond(phone) {

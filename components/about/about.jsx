@@ -36,11 +36,13 @@ export const About = () => {
             Hace 6 meses decidí empezar a estudiar fotografía y cada día me
             enamoro más de ella, me gusta ver lo que nadie ve, y darme cuenta de
             la cantidad de emociones que se generan a través de una foto. Ahora
-            estoy aplicando mis conocimientos, pero aún sigo aprendiendo. <br />
+            estoy aplicando mis conocimientos, pero aún sigo aprendiendo.
+          </p>
+          <p className={styles.aboutText}>
             Todavía no tengo una cámara y es por eso que todo lo que verás aquí
             será hecho con mi celular, pero como yo lo veo, no es la cámara
             quien hace la magia, sino el fotógrafo detrás del lente, así sea el
-            lente de un celular{" "}
+            lente de un celular.
           </p>
         </div>
       </div>

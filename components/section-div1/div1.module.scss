@@ -28,12 +28,8 @@
 
 .text {
   font-family: Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
-
-  @include respond(phone) {
-    font-size: 2.5rem;
-  }
 }
 
 .other {

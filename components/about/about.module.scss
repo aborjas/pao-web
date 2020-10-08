@@ -23,7 +23,7 @@
   }
 
   @include respond(phone) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .img,
@@ -61,6 +61,7 @@
       width: 105rem;
       height: auto;
       align-self: flex-start;
+      background-color: #dcd7d1;
     }
   }
 

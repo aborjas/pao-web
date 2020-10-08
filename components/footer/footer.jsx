@@ -9,7 +9,7 @@ export const Footer = () => {
       <img className={styles.img} src="/pngs/pg.png" />
       <SocialMenu />
       <p className={styles.text}>
-        ALL RIGHTS RESERVED. PAOLA GARCÍA FOTOGRAFÍA 2020 | DESIGNED AND
+        ALL RIGHTS RESERVED PAOLA GARCÍA FOTOGRAFÍA 2020 | DESIGNED AND
         DEVELOPED BY ADRIANA BORJAS
       </p>
     </footer>

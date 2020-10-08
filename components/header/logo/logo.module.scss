@@ -11,7 +11,7 @@
 .icon {
   height: 10rem;
   width: auto;
-  @include respond(phone) {
+  @include respond(tab-port) {
     height: 15rem;
   }
 }

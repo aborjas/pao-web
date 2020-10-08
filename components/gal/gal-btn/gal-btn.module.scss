@@ -9,12 +9,12 @@
   transition: all ease-in-out 0.3s;
 
   &:hover {
-    border-bottom: 2px solid rgba(82, 116, 122, 0.842);
+    border-bottom: 3px solid $secondary;
   }
 }
 
 .btn {
-  color: rgb(82, 116, 122);
+  color: $secondary;
   font-size: 2.5rem;
   text-decoration: none;
 
