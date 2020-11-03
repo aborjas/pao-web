@@ -5,15 +5,15 @@ import SVG from "react-inlinesvg";
 
 const socialMediaList = [
   {
-    link: "#",
+    link: "https://www.pinterest.com/paolagarciafotografia/_saved/",
     icon: "/social/pinterest.svg",
   },
   {
-    link: "#",
+    link: "https://www.instagram.com/paolagarciafoto/",
     icon: "/social/instagram.svg",
   },
   {
-    link: "#",
+    link: "https://www.facebook.com/paolagarciafoto/",
     icon: "/social/facebook.svg",
   },
   {
