@@ -8,9 +8,6 @@ export const About = () => {
     <section className={styles.container} id="about">
       <Title title="Sobre mí" />
       <div className={styles.info}>
-        <figure className={styles.imgBox}>
-          <img className={styles.img} src="/fotos/pao.jpg" />
-        </figure>
         <div className={styles.textContainer}>
           <p className={styles.aboutText}>
             Hola, soy Paola! Ingeniera de profesión y fotógrafa de corazón. Te

@@ -9,7 +9,7 @@ export default class MyApp extends App {
     return (
       <>
         <Head>
-          <link rel="icon" href="/favicon.png" />
+          <link rel="icon" href="/favicon.svg" />
           <title>Paola García Fotografía</title>
           <meta
             name="description"

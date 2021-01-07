@@ -9,7 +9,7 @@
   justify-content: center;
 
   @include respond(phone) {
-    height: 50rem;
+    height: auto;
   }
 }
 

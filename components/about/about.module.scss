@@ -5,72 +5,28 @@
 
 .info {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  padding: 0 10rem 10rem;
-  flex-direction: row-reverse;
-
-  @include respond(desktop) {
-    justify-content: center;
-  }
-
-  @include respond(medium-desktop) {
-    padding: 0 25rem 10rem;
-  }
-
-  @include respond(big-desktop) {
-    padding: 0 35rem 10rem;
-  }
-
-  @include respond(phone) {
-    flex-direction: column;
-  }
-
-  .img,
-  .imgBox {
-    width: 60rem;
-    height: auto;
-
-    @include respond(desktop) {
-      width: auto;
-      height: 68rem;
-    }
-
-    @include respond(medium-desktop) {
-      width: auto;
-      height: 60rem;
-    }
-
-    @include respond(phone) {
-      width: 105rem;
-      height: auto;
-      align-self: flex-end;
-    }
-  }
-  .imgBox {
-    position: relative;
-    z-index: 1;
-  }
+  padding-bottom: 10rem;
 
   .textContainer {
-    padding: 7rem 7rem 4rem;
     background-color: #efe9cc;
     height: auto;
+    width: 70rem;
 
-    @include respond(phone) {
-      width: 105rem;
-      height: auto;
-      align-self: flex-start;
+    @include respond(phone2) {
       background-color: #dcd7d1;
+      max-width: 60rem;
     }
   }
 
   .aboutText {
     font-family: Arial, Helvetica, sans-serif;
     color: #3d322c;
-    padding-bottom: 3rem;
+    padding: 3rem;
+    font-size: 2.2rem;
 
-    @include respond(phone) {
+    @include respond(phone2) {
       font-size: 4rem;
     }
   }
