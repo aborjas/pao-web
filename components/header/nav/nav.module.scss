@@ -14,7 +14,7 @@
   justify-content: space-evenly;
   width: 4rem;
   height: 5rem;
-  position: fixed;
+
   cursor: pointer;
 
   // .btnUp,
@@ -68,9 +68,12 @@
     }
   }
 
+  @include respond(tab-land) {
+    width: 100%;
+  }
+
   @include respond(tab-port) {
     top: 15rem;
-    width: 100%;
   }
 }
 
