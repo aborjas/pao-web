@@ -5,28 +5,28 @@ import styles from "./cards.module.scss";
 
 const PhotoList = [
   {
-    img: "/fotos/arbol.jpg",
+    img: "/fotosed/big-matica.jpg",
     description: "A short description",
     place: "Jardín Botánico Maracaibo",
     date: "12/08/2020",
   },
   {
-    img: "/fotos/couple.jpg",
+    img: "/fotosed/puente2.jpg",
+    description: "A short description",
+    place: "Maracaibo, Venezuela",
+    date: "19/02/2021",
+  },
+  {
+    img: "/fotosed/cielo.jpg",
     description: "A short description",
     place: "Jardín Botánico Maracaibo",
     date: "12/08/2020",
   },
   {
-    img: "/fotos/sky.jpg",
+    img: "/fotosed/PINTEREST.jpg",
     description: "A short description",
-    place: "Jardín Botánico Maracaibo",
-    date: "12/08/2020",
-  },
-  {
-    img: "/fotos/people.jpg",
-    description: "A short description",
-    place: "Jardín Botánico Maracaibo",
-    date: "12/08/2020",
+    place: "Maracaibo, Venezuela",
+    date: "24/12/2020",
   },
 ];
 

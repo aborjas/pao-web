@@ -19,8 +19,12 @@
   width: 35rem;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+  border: solid 2px transparent;
+  border-radius: 0.5rem;
+
   &:hover {
-    border: solid 2px #777;
+    border: solid 2px #ccc;
+    background-color: rgba(238, 238, 238, 0.5);
     .img {
       transform: scale(1.05);
     }

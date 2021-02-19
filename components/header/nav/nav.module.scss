@@ -28,7 +28,7 @@
 .menuContainer {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 41rem;
   height: 100vh;
   position: absolute;
   top: 10rem;
@@ -70,6 +70,7 @@
 
   @include respond(tab-port) {
     top: 15rem;
+    width: 100%;
   }
 }
 
