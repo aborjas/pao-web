@@ -6,15 +6,15 @@ import Link from "next/link";
 const navList = [
   {
     name: "SOBRE MÍ",
-    link: "#",
+    link: "#about",
   },
   {
     name: "GALERÍA",
-    link: "#",
+    link: "#gal",
   },
   {
     name: "CAPACITACIONES",
-    link: "#",
+    link: "#capacitaciones",
   },
 ];
 
@@ -22,9 +22,10 @@ export class Nav extends React.Component {
   state = {
     isOpen: false,
   };
+
   render() {
     return (
-      <Link href="#">
+      <>
         <div className={styles.nav}>
           <div
             onClick={() => this.setState({ isOpen: !this.state.isOpen })}
@@ -38,28 +39,39 @@ export class Nav extends React.Component {
             <div className={styles.btnDown}></div>
           </div>
         </div>
-      </Link>
+        <div
+          className={`${styles.menuContainer} ${
+            this.state.isOpen ? styles.menuContainerOpen : ""
+          }`}
+        >
+          <ul className={styles.list}>
+            {navList.map((value) => (
+              <li className={styles.item}>
+                <Link href={value.link}>
+                  <a
+                    onClick={() =>
+                      this.setState({ isOpen: !this.state.isOpen })
+                    }
+                    className={styles.name}
+                  >
+                    {value.name}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className={styles.text}>
+            <p className={styles.text}>SÍGUEME EN INSTAGRAM</p>
+            <a
+              className={styles.ig}
+              href="https://www.instagram.com/paolagarciafoto/"
+              target="_blank"
+            >
+              @paolagarciafoto
+            </a>
+          </div>
+        </div>
+      </>
     );
   }
 }
-
-// export const Nav = () => {
-//   const [isOpen, setIsOpen] = React.useState(false);
-//   return (
-//     <Link href="#">
-//       <div className={styles.nav}>
-//         <div
-//           onClick={() => setIsOpen(!isOpen)}
-//           className={`${styles.btnContainer} ${
-//             isOpen ? styles.isMenuOpen : ""
-//           }`}
-//         >
-//           <div className={styles.btnUp}></div>
-//           <div className={styles.btnCenter1}></div>
-//           <div className={styles.btnCenter2}></div>
-//           <div className={styles.btnDown}></div>
-//         </div>
-//       </div>
-//     </Link>
-//   );
-// };
