@@ -5,19 +5,19 @@ import styles from "./cards.module.scss";
 
 const PhotoList = [
   {
-    img: "/fotosed/big-matica.jpg",
+    img: "/fotosed/caminito2.jpg",
     description: "A short description",
     place: "Jardín Botánico Maracaibo",
     date: "12/08/2020",
   },
   {
-    img: "/fotosed/puente2.jpg",
+    img: "/fotosed/ice-heart.jpg",
     description: "A short description",
     place: "Maracaibo, Venezuela",
     date: "19/02/2021",
   },
   {
-    img: "/fotosed/cielo.jpg",
+    img: "/fotosed/big-matica.jpg",
     description: "A short description",
     place: "Jardín Botánico Maracaibo",
     date: "12/08/2020",
