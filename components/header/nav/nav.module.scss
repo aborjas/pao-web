@@ -1,17 +1,56 @@
 @import "variables.scss";
 
-.burguerMenu {
+.nav {
   grid-area: nav;
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.icon {
-  height: 3rem;
-  width: auto;
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 4rem;
+  height: 5rem;
+  position: fixed;
+  cursor: pointer;
 
-  @include respond(tab-port) {
-    height: 4rem;
+  // .btnUp,
+  // .btnDown,
+  .btnCenter1,
+  .btnCenter2 {
+    transition: 0.3s ease all;
   }
+}
+.isMenuOpen {
+  .btnUp,
+  .btnDown {
+    transform: scale(0);
+    // display: none;
+  }
+  .btnCenter1 {
+    transform: rotate(-45deg);
+  }
+  .btnCenter2 {
+    transform: rotate(45deg);
+  }
+}
+.btnCenter1 {
+  position: relative;
+}
+
+.btnUp,
+.btnCenter1,
+.btnCenter2,
+.btnDown {
+  background-color: $primary;
+  height: 0.3rem;
+  width: 4rem;
+  z-index: 2000;
+}
+
+.btnCenter2 {
+  position: absolute;
 }
