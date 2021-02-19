@@ -8,6 +8,7 @@
   font-family: "Ramstay";
   font-size: 9rem;
   color: #654634;
+  text-align: center;
 
   @include respond(phone) {
     font-size: 10rem;

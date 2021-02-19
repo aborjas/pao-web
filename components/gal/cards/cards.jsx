@@ -17,7 +17,7 @@ const PhotoList = [
     date: "19/02/2021",
   },
   {
-    img: "/fotosed/big-matica.jpg",
+    img: "/fotosed/pics-art.jpg",
     description: "A short description",
     place: "Jardín Botánico Maracaibo",
     date: "12/08/2020",
