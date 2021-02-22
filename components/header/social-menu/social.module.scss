@@ -4,12 +4,13 @@
   display: flex;
   justify-content: flex-end;
   grid-area: social;
+}
 
-  @include respond(phone) {
+.inHeader {
+  @include respond (tab-port) {
     display: none;
   }
 }
-
 .list {
   width: fit-content;
   list-style: none;

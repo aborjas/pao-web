@@ -27,4 +27,10 @@
   grid-column-gap: 4rem;
   width: 100%;
   padding: 0 4rem;
+  justify-content: center;
+  
+  @include respond(tab-port) {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-areas: "nav logo .";
+  }
 }

@@ -11,7 +11,7 @@ export const Header = () => {
       <div className={styles.content}>
         <Nav />
         <Logo />
-        <SocialMenu />
+        <SocialMenu isHeader />
       </div>
     </header>
   );

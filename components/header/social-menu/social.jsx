@@ -18,9 +18,9 @@ const socialMediaList = [
   },
 ];
 
-export const SocialMenu = () => {
+export const SocialMenu = ({ isHeader=false }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${isHeader ? styles.inHeader : ''}`}>
       <ul className={styles.list}>
         {socialMediaList.map((value) => (
           <li className={styles.item}>
