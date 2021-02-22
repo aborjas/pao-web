@@ -16,10 +16,6 @@ const socialMediaList = [
     link: "https://www.facebook.com/paolagarciafoto/",
     icon: "/social/facebook.svg",
   },
-  {
-    link: "#",
-    icon: "/social/gmail.svg",
-  },
 ];
 
 export const SocialMenu = () => {
@@ -33,6 +29,15 @@ export const SocialMenu = () => {
             </a>
           </li>
         ))}
+        <li className={styles.item}>
+          <a
+            className={styles.iconBox}
+            href="mailto:paolagarciafoto@gmail.com"
+            target="_blank"
+          >
+            <SVG className={styles.icon} src="/social/gmail.svg" />
+          </a>
+        </li>
       </ul>
     </div>
   );

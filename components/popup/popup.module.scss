@@ -19,12 +19,15 @@
   align-items: center;
   margin: 12rem 0 2rem;
   overflow: hidden;
+  @include respond(tab-land) {
+    margin: 17rem 0 2rem;
+  }
 }
 
 .img {
   position: relative;
-  max-width: 130rem;
-  height: 86vh;
+  max-width: 90vw;
+  max-height: 86vh;
   object-fit: cover;
 }
 
@@ -39,6 +42,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(tab-port) {
+    top: 16rem;
+  }
 }
 
 .btn1,
@@ -46,6 +52,9 @@
   background-color: $primary;
   height: 0.2rem;
   width: 2rem;
+  @include respond(tab-land) {
+    width: 3rem;
+  }
 }
 
 .btn1 {
