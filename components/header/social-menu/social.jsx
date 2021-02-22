@@ -28,7 +28,7 @@ export const SocialMenu = () => {
       <ul className={styles.list}>
         {socialMediaList.map((value) => (
           <li className={styles.item}>
-            <a href={value.link} target="_blank">
+            <a className={styles.iconBox} href={value.link} target="_blank">
               <SVG className={styles.icon} src={value.icon} />
             </a>
           </li>

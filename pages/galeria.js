@@ -1,10 +1,13 @@
+import * as React from "react";
 import { Header } from "components/header";
+import { Footer } from "components/footer";
+import { Galeria } from "components/galeria";
 
-const Galeria = () => (
+const Gallery = () => (
   <section>
     <Header />
-    <h1>Galería</h1>
-    <p>Hola mundo desde Galería</p>
+    <Galeria />
+    <Footer />
   </section>
 );
-export default Galeria;
+export default Gallery;

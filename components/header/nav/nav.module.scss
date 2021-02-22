@@ -50,19 +50,33 @@
         font-size: $font-size-biggest;
         font-weight: 100;
         margin: 1rem 0;
+        padding: 0.5rem 0;
+        border-bottom: 0.2rem solid transparent;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          border-bottom: 0.2rem solid $primary;
+        }
+
         @include respond(tab-land) {
           font-size: $font-size-grand;
         }
       }
     }
   }
-
   .text,
   .ig {
     text-decoration: none;
     text-align: center;
     color: $primary;
     font-size: $font-size-biggest;
+
+    .ig {
+      transition: all ease-in-out 0.3s;
+      &:hover {
+        color: $secondary;
+      }
+    }
+
     @include respond(tab-land) {
       font-size: $font-size-grand;
     }

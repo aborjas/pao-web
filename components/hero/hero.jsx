@@ -6,7 +6,6 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <figure className={styles.imgContainer}>
-        {/* <img className={styles.img} src="/fotos/hongo.jpg" /> */}
         <img
           className={styles.img}
           src="/fotosed/hongo.jpg"
