@@ -25,6 +25,7 @@
   margin: 2rem;
   border: 0.8rem solid $secondary;
   width: 80rem;
+  position: relative;
   // height: 15rem;
 
   @include respond(phone) {
@@ -52,14 +53,52 @@
 .place {
   font-size: 3rem;
 
-  @include respond(phone) {
-    font-size: 3rem;
-  }
 }
 
 .date {
   font-size: 2rem;
-  @include respond(phone) {
+}
+
+.seeMore {
+  align-self: flex-end;
+  text-decoration: none;
+  color: $secondary;
+  font-size: 2rem;
+  border-bottom: .2rem solid transparent;
+  transition: all ease-in-out .3s;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  &:hover {
+    border-bottom: .2rem solid $secondary;
+  }
+}
+
+.extendCap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 70rem;
+
+
+  .extendName,
+  .extendPlace, 
+  .teacher {
+    font-weight: 100;
+    color: #3d322c;
+    text-align: center;
+
+  }
+  .extendName {
+    font-size: 2.5rem;
+  }
+  .extendPlace {
+    font-size: 1.5rem;
+  }
+  .teacher {
     font-size: 2rem;
   }
 }

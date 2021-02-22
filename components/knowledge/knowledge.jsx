@@ -14,74 +14,73 @@ const knowList = [
     place: "Norestudios",
     date: "Mayo 2020",
   },
-  {
+  /*{
     name: "Maratón Internacional de Fotografía y Video",
     place: "Top 90 Online",
     date: "Mayo 2020",
-  },
-  /*{
-    name: "Pictorialismo, Ponencia por Ángeles Mesa (España)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name: "La narrativa del gesto, Ponencia por Paola Paz (Chile)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name: "Escenarios Fantasía, Ponencia por Mika Balbuena (Argentina)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name:
-      "Estilo personal en Fotografía de Bodas, Ponencia por Donald Bohorquez",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name:
-      "Fotografía documental de familia, Ponencia por Nacho Ibañez (España)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name: "Retoque Avanzado, Ponencia por Hugo Flores (México)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name: "Seguridad en una Sesión Newborn, Ponencia por Bea Pastor (España)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name:
-      "Rescatando Detalles y Creando Volumen, Ponencia por Emanuel Combin (Argentina)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name:
-      "Fotografía Editorial de Bodas, Ponencia por Laura Bruzual (Venezuela)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name:
-      " Imágenes significativas en una boda, Ponencia por Citlalli Rico (México)",
-    place: "Top 90 Online Maratón Internacional de Fotografía y Video",
-    date: "Mayo 2020",
-  },
-  {
-    name: "Nombre de la capacitación",
-    place: "Institución",
-    date: "30/10/2020",
   },*/
 ];
 
-export const Know = () => {
+const marathonList = [
+  {
+    name:"Rescatando Detalles y Creando Volumen",
+    place: "Argentina",
+    teacher: "Ponencia por Emanuel Combin",
+  },
+  {
+    name: "Estilo personal en Fotografía de Bodas",
+    place: "",
+    teacher: "Ponencia por Donald Bohorquez",
+  },
+  {
+    name: "Fotografía documental de familia",
+    place: "España",
+    teacher: "Ponencia por Nacho Ibañez",
+  },
+  {
+    name: "Seguridad en una Sesión Newborn",
+    place: "España",
+    teacher: "Ponencia por Bea Pastor",
+  },
+  {
+    name:"Fotografía Editorial de Bodas",
+    place: "Venezuela",
+    teacher: "Ponencia por Laura Bruzual",
+  },
+  {
+    name:"Imágenes significativas en una boda",
+    place: "México",
+    teacher: "Ponencia por Citlalli Rico",
+  },
+  { name: "Pictorialismo",
+    place: "España",
+    teacher: "Ponencia por Ángeles Mesa",
+  },
+  {
+    name: "La narrativa del gesto",
+    place: "Chile",
+    teacher: "Ponencia por Paola Paz",
+  },
+  {
+    name: "Retoque Avanzado",
+    place: "México",
+    teacher: "Ponencia por Hugo Flores",
+  },
+  {
+    name: "Escenarios Fantasía",
+    place: "Argentina",
+    teacher: "Ponencia por Mika Balbuena",
+  },
+];
+  
+
+export class Know extends React.Component {
+
+  state = {
+    isOpen: false,
+  };
+
+  render() {
   return (
     <section className={styles.container} id="capacitaciones">
       <Title title="Capacitaciones" />
@@ -93,7 +92,26 @@ export const Know = () => {
             <h3 className={styles.date}>{value.date}</h3>
           </div>
         ))}
+        <div className={styles.cap}>
+          <h3 className={styles.name}>Maratón Internacional de Fotografía y Video</h3>
+          <h3 className={styles.place}>Top 90 Online</h3>
+          <h3 className={styles.date}>Mayo 2020</h3>
+
+          <a className={styles.seeMore}
+          onClick={() => this.setState({ isOpen: !this.state.isOpen })}>{this.state.isOpen ? 'Menos↑' : 'Mas↓'}</a>
+          {this.state.isOpen && (
+marathonList.map((value) => (
+  <div className={styles.extendCap}>
+    <h3 className={styles.extendName}>{value.name}</h3>
+    <h3 className={styles.teacher}>{value.teacher}</h3>
+    <h3 className={styles.extendPlace}>{value.place}</h3>
+  </div>
+))
+          )}
+          {}
+        </div>
       </div>
     </section>
   );
 };
+}
